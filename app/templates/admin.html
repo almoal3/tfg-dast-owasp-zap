@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Panel de administración</h2>
+<p>Esta ruta se muestra sin comprobar correctamente el rol del usuario.</p>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Usuario</th>
+        <th>Rol</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.role }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

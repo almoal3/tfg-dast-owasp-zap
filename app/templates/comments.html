@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Comentarios</h2>
+<form method="post">
+    <label>Nuevo comentario</label>
+    <textarea name="content" rows="4"></textarea>
+    <button type="submit">Publicar</button>
+</form>
+
+<h3>Comentarios publicados</h3>
+{% for comment in comments %}
+    <article class="comment">
+        <p>{{ comment.content }}</p>
+        <small>Publicado por {{ comment.username }} el {{ comment.created_at }}</small>
+    </article>
+{% else %}
+    <p>No hay comentarios.</p>
+{% endfor %}
+{% endblock %}

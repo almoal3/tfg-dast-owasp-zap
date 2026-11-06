@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Inicio de sesión</h2>
+<form method="post">
+    <label>Usuario</label>
+    <input type="text" name="username">
+
+    <label>Contraseña</label>
+    <input type="password" name="password">
+
+    <button type="submit">Entrar</button>
+</form>
+<p>Usuario de prueba: <strong>alumno</strong> / <strong>alumno123</strong></p>
+<p>Administrador de prueba: <strong>admin</strong> / <strong>admin123</strong></p>
+{% endblock %}

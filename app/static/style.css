@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: #263238;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    max-width: 420px;
+}
+
+input, textarea, button {
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.messages {
+    background: #fff3cd;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 0.6rem;
+    text-align: left;
+}
